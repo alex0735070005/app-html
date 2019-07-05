@@ -17,9 +17,15 @@ div {
 }
 
 #header-top {
-    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .center {
+    max-width: 1000px;
     margin: auto;
+}
+
+#header-menu-bg ul {
+    display: flex;
 }
