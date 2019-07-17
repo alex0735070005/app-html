@@ -6,8 +6,14 @@
 }
 
 /*Remove border and padding*/
-* {
+*, a {
     box-sizing: border-box;
+    font-family: "bebasbold";
+    color: white;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body, ul {
@@ -21,6 +27,11 @@ a {
 
 li {
     list-style: none;
+}
+
+header {
+    box-shadow: 0 0px 2px 1px #00000047;
+    position: relative;
 }
 
 #search {
@@ -53,8 +64,8 @@ li {
 
 #cart span {
     font-size: 32px;
-    font-family: "bebasbold";
     margin-top: 10px;
+    color: #a1a1a1;
 }
 
 #header-top {
@@ -82,8 +93,6 @@ li {
 
 
 #header-menu-bg a {
-    font-family: "bebasbold";
-    color: white;
     padding: 0 20px;
     border-right: 1px solid white;
     font-size: 20px;
@@ -98,6 +107,39 @@ li {
     padding-left: 0;
 }
 
+#slider-bg {
+    background: #42c5b7;
+    padding: 70px 15px 50px 15px;
+}
+
+#slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.slide-description {
+    max-width: 420px;
+}
+
+.slide-description h2 {
+    font-size: 70px;
+    margin: 0;
+}
+
+.slide-description p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.slide-description button {
+    background: none;
+    border: 2px solid white;
+    padding: 13px 20px 7px 20px;
+    border-radius: 8px;
+    font-size: 28px;
+    cursor: pointer;
+}
 
 
 @media(max-width: 1030px) {
@@ -111,6 +153,17 @@ li {
 
     #header-menu-bg a {
         border: none;
+    }
+}
+
+@media(max-width: 730px) {
+    #slider-bg {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .slide-description {
+        margin-top: 15px;
     }
 }
 
